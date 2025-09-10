@@ -1,0 +1,29 @@
+# EventEase2 Frontend Requirements
+# Node.js version: 16.x or higher
+
+# Core Dependencies
+react@^18.2.0
+react-dom@^18.2.0
+react-router-dom@^6.8.0
+axios@^1.6.0
+react-hot-toast@^2.4.1
+
+# Build Tools
+vite@^4.4.5
+@vitejs/plugin-react@^4.0.3
+
+# Development Dependencies
+@types/react@^18.2.15
+@types/react-dom@^18.2.7
+eslint@^8.45.0
+eslint-plugin-react@^7.32.2
+eslint-plugin-react-hooks@^4.6.0
+eslint-plugin-react-refresh@^0.4.3
+
+# Environment Requirements
+# Node.js: >= 16.0.0
+# npm: >= 8.0.0
+
+# Installation Commands:
+# npm install react react-dom react-router-dom axios react-hot-toast
+# npm install -D vite @vitejs/plugin-react eslint

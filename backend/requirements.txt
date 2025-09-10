@@ -1,0 +1,24 @@
+# EventEase2 Backend Requirements
+# Node.js version: 16.x or higher
+
+# Core Dependencies
+express@^4.18.2
+mongoose@^8.0.0
+cors@^2.8.5
+dotenv@^16.3.1
+
+# Authentication & Security
+jsonwebtoken@^9.0.2
+bcrypt@^5.1.1
+
+# Development Dependencies (Optional)
+nodemon@^3.0.1
+
+# Environment Requirements
+# Node.js: >= 16.0.0
+# npm: >= 8.0.0
+# MongoDB: >= 5.0.0
+
+# Installation Commands:
+# npm install express mongoose cors dotenv jsonwebtoken bcrypt
+# npm install -D nodemon (for development)
