@@ -31,3 +31,12 @@ export const login = async (req, res) => {
   const token = signToken(user._id);
   res.status(200).json({ token, user });
 };
+
+export const getMe = async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id);
+    res.status(200).json({ user });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};

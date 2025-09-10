@@ -45,8 +45,6 @@ nav ul li button:hover {
   color: #ff9800; /* Orange tone for hover */
 }
 
-
-
 /* Hero Section */
 .hero {
   position: relative;
@@ -279,8 +277,6 @@ nav ul li button:hover {
   background-color: #e68a00; /* Darker orange for hover */
 }
 
-
-
 /* Footer */
 footer {
   background-color: #1c1c1c; /* Darker shade for footer */
@@ -327,5 +323,16 @@ footer .newsletter button:hover {
 }
 
 .about p {
+  color: #e0e0e0;
+}
+
+/* Number of Participants Field */
+.event form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #424242; /* Darker input background */
   color: #e0e0e0;
 }

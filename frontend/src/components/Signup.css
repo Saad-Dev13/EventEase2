@@ -10,34 +10,59 @@
   
   .signup form {
     background-color: #2c2c2c; /* Slightly lighter shade for form */
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 15px;
     margin: 20px auto;
-    max-width: 400px;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #424242;
   }
   
   .signup form input,
   .signup form select {
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     margin: 10px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #424242; /* Darker input background */
     color: #e0e0e0;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .signup form input:focus,
+  .signup form select:focus {
+    outline: none;
+    background-color: #525252;
+    box-shadow: 0 0 0 2px #ff9800;
+  }
+  
+  .signup form input::placeholder {
+    color: #bbb;
   }
   
   .signup form button {
     background-color: #ff9800; /* Orange tone for button */
     border: none;
     color: #121212;
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
   }
   
   .signup form button:hover {
     background-color: #e68a00; /* Darker orange for hover */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
   }
   
   .signup p {

@@ -1,0 +1,342 @@
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 80vh;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5em;
+  color: #ff9800;
+}
+
+.dashboard-header p {
+  color: #e0e0e0;
+}
+
+.dashboard-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.dashboard-tabs button {
+  padding: 12px 24px;
+  border: none;
+  background: #2c2c2c;
+  color: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.dashboard-tabs button.active,
+.dashboard-tabs button:hover {
+  background: #ff9800;
+  color: #121212;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #424242;
+}
+
+.section-header h2 {
+  color: #ff9800;
+  margin: 0;
+}
+
+.btn-primary {
+  background: #ff9800;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #e68a00;
+}
+
+.btn-secondary {
+  background: #424242;
+  color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background: #616161;
+}
+
+.btn-edit {
+  background: #ff9800;
+  color: #121212;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.btn-edit:hover {
+  background: #e68a00;
+}
+
+.btn-delete {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-delete:hover {
+  background: #c62828;
+}
+
+.btn-delete-small {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-delete-small:hover {
+  background: #c62828;
+}
+
+.event-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #2c2c2c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: #e0e0e0;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  color: #ff9800;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #424242;
+  color: #e0e0e0;
+}
+
+.modal-content textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.events-section {
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 15px;
+  background-color: #121212;
+  border-radius: 8px;
+}
+
+.event-card-admin {
+  background: #2c2c2c;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #424242;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-card-admin:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.event-card-admin h3 {
+  margin: 0 0 10px 0;
+  color: #ff9800;
+}
+
+.event-card-admin p {
+  margin: 5px 0;
+  color: #e0e0e0;
+}
+
+.event-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.messages-section {
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+}
+
+.messages-section h2 {
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message-card {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #424242;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-header h4 {
+  margin: 0;
+  color: #ff9800;
+}
+
+.message-email {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin: 0;
+}
+
+.message-card h5 {
+  margin: 10px 0;
+  color: #ff9800;
+}
+
+.message-card p {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.message-card small {
+  color: #888;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 10px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .events-section,
+  .messages-section {
+    padding: 15px;
+  }
+  
+  .events-list {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+  
+  .message-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
